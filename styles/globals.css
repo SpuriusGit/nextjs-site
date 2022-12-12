@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: linear-gradient(141.62deg,#2090CD -3.46%,#16548C 20.32%,#132351 48.54%,#1D1920 112.96%);
 }
 .main::-webkit-scrollbar, html::-webkit-scrollbar, body::-webkit-scrollbar {
   width: 0;
@@ -43,7 +44,7 @@ h3 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.2px;
   color: #fff;
@@ -58,6 +59,12 @@ p {
   letter-spacing: 0.2px;
   color: #FFFFFF;
 }
+.section-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.modalwindow {display: none;}
 
 @media (prefers-color-scheme: dark) {
   html {

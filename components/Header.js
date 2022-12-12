@@ -6,14 +6,15 @@ import $ from 'jquery';
 
 export default function Header() {
     const handleModalOpen = () => {
-        alert('.'+ modalStyles.modalWindow);
-        $('.'+ modalStyles.modalWindow).fadeIn(300);
+        $('.modalWindow').fadeIn(300);
     };
 
     return (
         <header className={styles.header}>
             <div className={styles.headerLogo}>
-                <Image src="/images/logo.png" width='100' height="20"></Image>
+                <Link href="/">
+                    <Image src="/images/logo.png" width='100' height="20" alt="Logo image"></Image>
+                </Link>
             </div>
             <div className={styles.headerNav}>
                 <ul>
@@ -57,6 +58,14 @@ export default function Header() {
                         <span className={styles.headerLetter}>F</span>
                         <span className={styles.headerLetter}>A</span>
                         <span className={styles.headerLetter}>Q</span>
+                    </Link>
+                </li>
+                <li className={styles.headerNavItem}>
+                    <Link href="blog">
+                        <span className={styles.headerLetter}>B</span>
+                        <span className={styles.headerLetter}>l</span>
+                        <span className={styles.headerLetter}>o</span>
+                        <span className={styles.headerLetter}>g</span>
                     </Link>
                 </li>
                 <li className={styles.headerNavItem}>

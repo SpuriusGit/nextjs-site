@@ -29,7 +29,7 @@
 
     z-index: 9999999999;
 }
-.modalContent p.footer-form {
+.footerForm {
     color: #1F3166;
     line-height: 40px;
 }

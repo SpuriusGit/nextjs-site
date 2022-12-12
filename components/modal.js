@@ -1,8 +1,6 @@
 import { useHubspotForm } from 'next-hubspot';
 import styles from '../styles/modal.module.css';
 import $ from 'jquery';
-import { useEffect } from 'react';
-
 
 export default function Modal() {
     const { loaded, error, formCreated } = useHubspotForm({
@@ -12,11 +10,11 @@ export default function Modal() {
     });
 
     const handleClose = () => {
-        $('.'+ styles.modalWindow).fadeOut(300);
+        $('.modalWindow').fadeOut(300);
     };
 
     return (
-            <div className={styles.modalwindow}>
+            <div className='modalWindow' style={{display: 'none'}}>
                 <div className={styles.modalBackground}></div>
                 <div className={styles.modalContent}>
                     <div className={styles.modalClose} onClick={handleClose}>X</div>

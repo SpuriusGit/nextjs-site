@@ -4,22 +4,38 @@
     left: 0px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
+    padding: 0px 30px;
 }
 
 .headerNav {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.headerNavItem {
+    margin: 10px;
+}
+
+.headerLetter {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    opacity: .7;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .headerNav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
+    width: 80%;
 }
 
 .headerGetInTouch {
@@ -37,3 +53,4 @@
     position: relative;
     cursor: pointer;
 }
+
